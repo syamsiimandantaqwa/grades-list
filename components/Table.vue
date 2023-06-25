@@ -30,6 +30,9 @@
             </tr>
           </thead>
           <tbody>
+            <tr class="tr-grades" v-if="!dataTable.length">
+              <td class="td text-center" colspan="7">tidak ada data yang bisa di tampilkan</td>
+            </tr>
           	<tr class="tr-grades" v-for="({nama, grades, nisn }, index) in dataTable" :key="nisn">
           		<td class="td-number">{{ index + 1 }}</td>
           		<td class="td">{{ nisn }}</td>
@@ -40,6 +43,7 @@
           		<td class="td" v-for="(grade, index) in grades" :key="index">{{ grade }}</td>
               <td class="td" v-if="!grades.length">0</td>
           	</tr>
+
           </tbody>
         </table>
       </div>
