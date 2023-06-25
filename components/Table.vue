@@ -58,12 +58,11 @@
 
   const cols = (data) => {
     const cols = data.map(d => d.grades.length);
-    console.log(cols)
     return Math.max(...cols);
   }
 
   const average = (grades) => {
-     return grades.length ? Math.round(grades.reduce((a, b) => a + b) / grades.length) : "-";
+     return grades.length ? (grades.reduce((a, b) => a + b) / grades.length).toFixed(2) : "-";
   }
 
   const minGrade = (grades) => {
