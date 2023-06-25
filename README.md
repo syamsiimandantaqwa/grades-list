@@ -5,4 +5,4 @@ dibuat menggunakan nuxt 3 dan memanfaatkan local storage
 
 ## Design
 
-![desain](./gradesList.png)
+![desain](./public/gradesList.png)
