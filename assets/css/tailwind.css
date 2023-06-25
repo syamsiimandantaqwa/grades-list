@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.th {
+		@apply text-sm font-medium text-gray-900 px-6 py-4 text-left;
+	}
+
+	.td {
+		@apply text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap;
+	}
+
+	.td-number {
+		@apply px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900
+	}
+
+	.tr-grades {
+		@apply bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100;
+	}
+
+	.heading {
+		@apply text-xl text-green-500 pl-[2rem] my-[1rem] font-bold;
+	}
+
+	.btn {
+		@apply border border-green-200 bg-green-400 px-[10px] py-[5px] text-white uppercase font-bold rounded-lg; 
+	}
+}
+
